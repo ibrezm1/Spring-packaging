@@ -25,7 +25,7 @@ public class HelloControllerTest {
     public void testHello() throws Exception {
         when(helloService.greet()).thenReturn("Hello, World!");
 
-        mockMvc.perform(get("/hello1"))
+        mockMvc.perform(get("/hello"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("Hello, World!"));
     }
