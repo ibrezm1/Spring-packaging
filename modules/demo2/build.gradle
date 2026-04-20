@@ -1,0 +1,7 @@
+dependencies {
+    testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
+}
+
+bootJar {
+    archiveFileName = 'demo2.jar'
+}

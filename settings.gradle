@@ -1,1 +1,6 @@
-rootProject.name = 'demo1'
+rootProject.name = 'demo-parent'
+include 'demo1'
+include 'demo2'
+
+project(':demo1').projectDir = file('modules/demo1')
+project(':demo2').projectDir = file('modules/demo2')
